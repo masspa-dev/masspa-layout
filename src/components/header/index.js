@@ -30,7 +30,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import classNames from 'classnames';
 import React from 'react';
 import Logo from '../logo';
-import VnFlag from '../../images/vn_flag.png'
 import { styles } from './styles';
 import { version } from "../../utils/setting";
 import ReportProblemIcon from '@material-ui/icons/ReportProblem';
@@ -88,7 +87,10 @@ class Header extends React.Component {
                         >
                             <MenuItem className={classes.buttonItem}>
                                 <ListItemIcon className={classes.rootListItemIcon}>
-                                    <img src={VnFlag} className={classes.flag} />
+                                    <img 
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/1200px-Flag_of_Vietnam.svg.png" 
+                                        className={classes.flag}
+                                    />
                                 </ListItemIcon>
                                 <Typography variant="inherit">Vietnamese</Typography>
                             </MenuItem>
